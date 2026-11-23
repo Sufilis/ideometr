@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политический компас — тест на идеологию</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><b onclick="show('home')">Политический компас</b><a href="#" onclick="show('ideas');return false">Идеологии</a></nav>
+
+<section id="home">
+  <div class="hero">
+    <div>
+      <h1>Привет! Узнай, где ты на политической карте</h1>
+      <p>Ответь на вопросы об экономике, власти и свободах — и мы покажем твою идеологию, известного человека и страну, на которые ты ближе всего похож.</p>
+    </div>
+    <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="5" y="5" width="190" height="190" rx="12" fill="none" stroke="currentColor" opacity=".25" stroke-width="2"/><path d="M100 5v190M5 100h190" stroke="currentColor" opacity=".25" stroke-width="2"/><circle cx="135" cy="62" r="11" fill="var(--acc)"/></svg>
+  </div>
+  <div class="tests">
+    <button class="test" onclick="start('blitz')"><div><strong>Экспресс</strong><small>Быстрый результат, ориентир за пару минут</small></div><span>16 вопросов</span></button>
+    <button class="test" onclick="start('mid')"><div><strong>Стандарт</strong><small>Золотая середина точности и времени</small></div><span>40 вопросов</span></button>
+    <button class="test" onclick="start('full')"><div><strong>Глубокий анализ</strong><small>Самый точный результат</small></div><span>80 вопросов</span></button>
+  </div>
+  <button class="btn ghost" onclick="show('ideas')">Что значит каждая идеология</button>
+  <p class="privacy">Ваши ответы не сохраняются и никуда не передаются. Мы считаем только число посещений (обезличенная статистика).</p>
+</section>
+
+<section id="quiz" hidden>
+  <div class="meta" id="cnt"></div>
+  <div class="bar"><i id="prog"></i></div>
+  <div class="q" id="qt"></div>
+  <div class="ans" id="ans"></div>
+  <div class="row"><button class="btn ghost" onclick="back()">Назад</button><button class="btn ghost" onclick="show('home')">Выйти</button></div>
+</section>
+
+<section id="result" hidden></section>
+
+<section id="ideas" hidden>
+  <h2>Идеологии: коротко и просто</h2>
+  <p class="meta">Это упрощённые описания. Реальные взгляды людей и государств сложнее любой подписи.</p>
+  <div id="list"></div>
+  <button class="btn" onclick="show('home')">К тестам</button>
+</section>
+
+<p class="note">Тест упрощён и не претендует на научную точность. Он не оценивает взгляды как «правильные» или «неправильные». Примеры людей и стран иллюстрируют идеологию, но не совпадают с ней полностью.</p>
+</main>
+
+
+<script src="data.js"></script>
+<script src="ads.js"></script>
+<script src="stats.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
