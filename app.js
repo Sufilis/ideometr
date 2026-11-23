@@ -1,3 +1,6 @@
+// Если ads.js или stats.js не загрузились, сайт всё равно должен работать
+if(typeof ADS==="undefined"){window.ADS={};window.box=()=>"";window.inline=()=>{};window.fullscreen=()=>{}}
+if(typeof track==="undefined")window.track=()=>{};
 let M="";
 const MODE={blitz:j=>j%5==0,mid:j=>j%4<2,full:()=>true};
 const A=[["Полностью согласен",2],["Скорее согласен",1],["Затрудняюсь",0],["Скорее не согласен",-1],["Категорически не согласен",-2]];
