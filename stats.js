@@ -1,7 +1,7 @@
 // === Статистика посещений ===
 // Выберите ОДИН вариант и впишите значение. Пустая строка = счётчик выключен и ничего не загружается.
 const STATS={
-  goatcounter:"https://yusuf-olimov.goatcounter.com/count", // имя сайта: для https://mysite.goatcounter.com впишите "mysite" (без cookies)
+  goatcounter:"yusuf-olimov", // имя сайта: для https://mysite.goatcounter.com впишите "mysite" (без cookies)
   metrika:""      // номер счётчика Яндекс Метрики, например "12345678" (использует cookies)
 };
 function track(name){ // отдельные события: старт и завершение тестов, просмотр страницы идеологий
