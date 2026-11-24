@@ -1,5 +1,9 @@
 // === Статистика посещений ===
 // Выберите ОДИН вариант и впишите значение. Пустая строка = счётчик выключен и ничего не загружается.
+
+<script data-goatcounter="https://yusuf-olimov.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 const STATS={
   goatcounter:"yusuf-olimov", // имя сайта: для https://mysite.goatcounter.com впишите "mysite" (без cookies)
   metrika:""      // номер счётчика Яндекс Метрики, например "12345678" (использует cookies)
