@@ -1,7 +1,7 @@
 // === Статистика посещений ===
 // Выберите ОДИН вариант и впишите значение. Пустая строка = счётчик выключен и ничего не загружается.
 
-<script data-goatcounter="https://yusuf-olimov.goatcounter.com/count"
+<script data-goatcounter="yusuf-olimov"
         async src="//gc.zgo.at/count.js"></script>
 
 const STATS={
