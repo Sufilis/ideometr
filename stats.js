@@ -1,9 +1,5 @@
 // === Статистика посещений ===
 // Выберите ОДИН вариант и впишите значение. Пустая строка = счётчик выключен и ничего не загружается.
-
-<script data-goatcounter="yusuf-olimov"
-        async src="//gc.zgo.at/count.js"></script>
-
 const STATS={
   goatcounter:"yusuf-olimov", // имя сайта: для https://mysite.goatcounter.com впишите "mysite" (без cookies)
   metrika:""      // номер счётчика Яндекс Метрики, например "12345678" (использует cookies)
@@ -17,7 +13,7 @@ function track(name){ // отдельные события: старт и зав
 if(STATS.goatcounter){
   const s=document.createElement("script");s.async=true;
   s.dataset.goatcounter=`https://${STATS.goatcounter}.goatcounter.com/count`;
-  s.src="//gc.zgo.at/count.js";document.head.append(s);
+  s.src="https://gc.zgo.at/count.js";document.head.append(s);
 }
 if(STATS.metrika){
   window.ym=window.ym||function(){(ym.a=ym.a||[]).push(arguments)};ym.l=+new Date();
